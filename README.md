@@ -83,13 +83,6 @@ student-management-system/
 | 60–69.99 | D |
 | 0–59.99 | F |
 
-## Future improvements
-
-- Add a graphical interface with Tkinter
-- Store records in SQLite
-- Export class reports to CSV
-- Add login roles for teachers and administrators
 
 ## Author
-
-Add your name and GitHub profile here.
+Farid Hassani

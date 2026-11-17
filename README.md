@@ -1,105 +1,95 @@
-# Student Management System
+# Student Management System (Python)
 
-A command-line Student Management System built with Python and Object-Oriented Programming (OOP). This project allows users to manage student records, track grades, and store information using JSON file persistence.
+A beginner-friendly command-line application for managing student records. It uses object-oriented programming and stores data locally in a JSON file.
 
 ## Features
 
-- **Add Students:** Register new students with their ID, name, age, and course.
-- **View Students:** Display all registered students.
-- **Search Students:** Find students using their ID or name.
-- **Update Information:** Modify existing student details.
-- **Manage Grades:** Add grades and calculate student averages.
-- **Letter Grades:** Automatically determine letter grades.
-- **Delete Students:** Remove student records.
-- **Data Persistence:** Save and load student records using JSON files.
-- **Input Validation:** Handle invalid and unexpected user input.
+- Add a student with a unique ID
+- View all students
+- Search by student ID or name
+- Update student details
+- Add and remove subject grades
+- Calculate an individual average and letter grade
+- Delete a student after confirmation
+- Generate an individual student report
+- Generate a class summary
+- Automatically save data to `data/students.json`
 
-## Technologies Used
+## Requirements
 
-- Python 3
-- Object-Oriented Programming (OOP)
-- JSON
-- `pathlib`
-- `unittest`
+- Python 3.8 or newer
+- No third-party packages are required
 
-## Project Structure
+## Run the project
 
-```text
-student-management-system/
-│
-├── main.py
-├── student.py
-├── student_manager.py
-├── utils.py
-│
-├── data/
-│   └── .gitkeep
-│
-├── tests/
-│   └── test_student_manager.py
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
-## Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/student-management-system.git
-```
-
-### 2. Navigate to the Project Directory
-
-```bash
-cd student-management-system
-```
-
-### 3. Run the Application
+1. Download or clone this repository.
+2. Open a terminal in the project folder.
+3. Run:
 
 ```bash
 python main.py
 ```
 
-If your system uses `python3`, run:
+On some systems, use `python3 main.py`.
 
-```bash
-python3 main.py
+## Example workflow
+
+1. Select `1` and add a student:
+   - ID: `ST001`
+   - Name: `Sara Ahmad`
+   - Age: `20`
+   - Course: `Python`
+2. Select `5` to add a grade:
+   - Student ID: `ST001`
+   - Subject: `Python Basics`
+   - Grade: `92`
+3. Select `8` to view the student's report.
+
+The `data` folder and JSON file are created automatically after the first change.
+
+## Project structure
+
+```text
+student-management-system/
+├── main.py
+├── student.py
+├── student_manager.py
+├── utils.py
+├── data/
+│   └── students.json   # created automatically
+├── tests/
+│   └── test_student_manager.py
+├── README.md
+└── .gitignore
 ```
 
-## Running Tests
+## Concepts demonstrated
 
-The project includes unit tests to check the functionality of the student management system.
+- Variables, data types, conditions, and loops
+- Functions and modular programming
+- Classes, objects, methods, and properties
+- Lists and dictionaries
+- File handling and JSON serialization
+- Input validation and exception handling
+- CRUD operations (Create, Read, Update, Delete)
 
-Run the tests with:
+## Grade scale
 
-```bash
-python -m unittest discover -s tests -v
-```
+| Average | Letter |
+|---:|:---:|
+| 90–100 | A |
+| 80–89.99 | B |
+| 70–79.99 | C |
+| 60–69.99 | D |
+| 0–59.99 | F |
 
-## What I Learned
+## Future improvements
 
-Through this project, I practiced:
-
-- Creating classes and objects in Python.
-- Understanding constructors and instance attributes.
-- Working with methods, properties, and class methods.
-- Organizing code into multiple modules.
-- Implementing CRUD operations.
-- Reading and writing JSON files.
-- Handling exceptions and validating user input.
-- Writing unit tests using `unittest`.
+- Add a graphical interface with Tkinter
+- Store records in SQLite
+- Export class reports to CSV
+- Add login roles for teachers and administrators
 
 ## Author
 
-**Farid Hassani**
-
-Aspiring Python Developer | Information Systems Graduate
-
-[GitHub Profile](https://github.com/fred5566)
-
----
-
-*This project was developed as part of my practical Python programming journey, with a focus on Object-Oriented Programming and real-world application development.*
+Add your name and GitHub profile here.
